@@ -28,7 +28,7 @@ class _CadUsuarioPageState extends State<CadUsuarioPage> {
       final user = User(
         name: _nomeController.text,
         email: _emailController.text,
-        password: _senhaController.text,
+        password: _senhaController.text, cpf: '',
       );
       try {
         await Provider.of<UserRegisterProvider>(
